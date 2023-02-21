@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import GPLogo from "../../public/gp-nav.png"
+import GPLogo from '../public/gp-nav.png'
 
 const NavigationBar = () => {
   return (

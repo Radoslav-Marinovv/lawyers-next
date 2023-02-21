@@ -1,8 +1,8 @@
+import { useNews } from '@/hooks/useNews'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React, { memo } from 'react'
-import Loading from './components/Loading'
-import { useNews } from './hooks/useNews'
+import Loading from '../components/Loading'
 
 const News: NextPage = () => {
 

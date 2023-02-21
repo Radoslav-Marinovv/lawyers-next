@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import GPfooter from "../../public/gp-footer.png"
+import GPfooter from '../public/gp-footer.png'
 
 const Footer = () => {
   return (
