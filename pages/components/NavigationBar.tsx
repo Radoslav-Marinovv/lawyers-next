@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import GPLogo from "../../public/gp-nav.png"
 
 const NavigationBar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-neutral-100 text-amber-200-content">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -16,7 +18,7 @@ const NavigationBar = () => {
             <li><Link href={"/contacts"}>Контакти</Link></li>
           </ul>
         </div>
-        <Link href={"/"} className="btn btn-ghost normal-case text-xl">Грошев и партньори (Лого?)</Link>
+        <Link href={"/"} className="btn btn-ghost normal-case text-xl"><Image alt='Грошев и партньори' src={GPLogo} width={260} /></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
