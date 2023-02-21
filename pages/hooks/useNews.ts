@@ -9,11 +9,6 @@ type Post = {
 };
 
 export const useNews = () => {
-  const bloggerUser = "947014603563891833";
-  const bloggerAPIKEY = [
-    "AIzaSyAOIgMtAnr0mZKCyTXFvowSesUVtkui7po",
-    "https://www.googleapis.com/blogger/v3/blogs/947014603563891833/posts?key=AIzaSyAOIgMtAnr0mZKCyTXFvowSesUVtkui7po",
-  ];
   const URL =
     "https://www.googleapis.com/blogger/v3/blogs/947014603563891833/posts?key=";
   const [news, setNews] = useState<Post[]>([]);
