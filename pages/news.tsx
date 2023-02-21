@@ -18,7 +18,7 @@ const News: NextPage = () => {
       </Head>
       <main className='max-w-4xl p-4'>
         <div >{isLoading ? <Loading /> :
-          news.map((post) => {
+          news?.map((post) => {
             return (
               <>
                 <div key={post.id} className="card max-w-full bg-base-100 shadow-xl mb-4">
