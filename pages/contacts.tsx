@@ -3,7 +3,6 @@ import Head from 'next/head'
 import React from 'react'
 
 const Contacts: NextPage = () => {
-  console.log("test ")
   return (
     <>
       <Head>
@@ -12,7 +11,9 @@ const Contacts: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div>contacts</div>
+      <main className='max-w-4xl p-4'>
+        <div>contacts</div>
+      </main>
     </>
   )
 }

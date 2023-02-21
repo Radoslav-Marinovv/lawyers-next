@@ -1,8 +1,13 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { memo } from 'react'
+import Loading from './components/Loading'
+import { useNews } from './hooks/useNews'
 
 const News: NextPage = () => {
+
+  const { news, isLoading } = useNews()
+  console.log(news)
   return (
     <>
       <Head>
@@ -11,9 +16,24 @@ const News: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div>news</div>
+      <main className='max-w-4xl p-4'>
+        <div >{isLoading ? <Loading /> :
+          news.map((post) => {
+            return (
+              <>
+                <div key={post.id} className="card max-w-full bg-base-100 shadow-xl mb-4">
+                  <div className="card-body max-w-fit">
+                    <h2 className="card-title">{post.title}</h2>
+                    <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
+                  </div>
+                </div>
+              </>
+            )
+          })}
+        </div>
+      </main>
     </>
   )
 }
 
-export default News
+export default memo(News)
