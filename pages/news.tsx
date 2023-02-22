@@ -16,13 +16,13 @@ const News: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className='max-w-4xl p-4'>
+      <main className='md:max-w-4xl max-w-sm p-4'>
         <div >{isLoading ? <Loading /> :
           news?.map((post) => {
             return (
               <>
                 <div key={post.id} className="card max-w-full bg-base-100 shadow-xl mb-4">
-                  <div className="card-body max-w-fit">
+                  <div className="card-body max-w-full">
                     <h2 className="card-title">{post.title}</h2>
                     <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
                   </div>

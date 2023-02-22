@@ -1,6 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import Location from '../public/location.png'
 
 const Contacts: NextPage = () => {
   return (
@@ -11,8 +14,13 @@ const Contacts: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className='max-w-4xl p-4'>
-        <div>contacts</div>
+      <main className='min-h-full'>
+        <h1>Контакти:</h1>
+        <Link href={"https://www.google.com/maps/place/%D1%83%D0%BB.+%E2%80%9E%D0%9A%D0%BD%D1%8F%D0%B7+%D0%91%D0%BE%D1%80%D0%B8%D1%81+I%E2%80%9C+100,+1000+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F/@42.6943472,23.3182764,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa856c81038a5f:0xba3a9594f53855e7!8m2!3d42.6943472!4d23.3182764!16s%2Fg%2F11c5l2mw4m"}>
+          <Image alt='location' src={Location} width={640} />
+        </Link>
+        <br />
+        <p>България, София 1000, ул."Княз Борис I" 100, ет.3, ап.8</p> <br /> тел.<Link href={"tel:+35929819687"}>02 981 9687</Link>  <br /> e-mail:<Link href={"mailto:office@legalbg.net"}>office@legalbg.net</Link>
       </main>
     </>
   )
