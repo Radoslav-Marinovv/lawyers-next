@@ -21,9 +21,9 @@ const Contacts: NextPage = () => {
         <Link href={mapLink}>
           <Image alt='location' src={Location} width={640} />
         </Link>
-        <p>България, София 1000, ул."Княз Борис I" 100, ет.3, ап.8</p>
+        <p>България, София 1000, ул.&quot;Княз Борис I&quot; 100, ет.3, ап.8</p>
         <p>тел.
-          <Link href={'tel:+35929819687'}>
+          <Link href='tel:+35929819687'>
             02 981 9687
           </Link>
         </p>
