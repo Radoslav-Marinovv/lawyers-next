@@ -10,7 +10,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <NavigationBar />
-      <main className="flex flex-col">{children}</main>
+      <main className="flex flex-col min-h-full m-auto">{children}</main>
       <Footer />
     </>
   )

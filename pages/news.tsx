@@ -15,8 +15,8 @@ const News: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className='md:max-w-4xl max-w-sm z-0 p-4'>
-        <div>{isLoading ? <Loading /> :
+      <div className='md:max-w-4xl max-w-sm z-0 p-4 h-full m-auto'>
+        <div>{!isLoading ? <Loading /> :
           news?.map((post) => {
             return (
               <Fragment key={post.id}>
