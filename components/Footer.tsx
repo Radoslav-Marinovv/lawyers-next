@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import GPfooter from '../public/gp-footer.png'
+import ContactsLinks from './ContactsLinks'
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-neutral-100 text-amber-200-content">
+    <footer className="footer p-10 bg-neutral-100 text-amber-200-content mt-auto border-t-2">
+      <div>
+        <ContactsLinks />
+      </div>
       <div>
         <Image alt='Groshev & Partners' src={GPfooter} width={200} className="fill-current" />
-        <p>Providing legal services since 1992</p>
       </div>
       <div>
         <span className="footer-title">Social</span>
