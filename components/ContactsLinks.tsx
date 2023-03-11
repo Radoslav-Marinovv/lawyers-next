@@ -1,20 +1,48 @@
 import Link from 'next/link'
 import React from 'react'
 
-const ContactsLinks = () => {
+type Props = {
+  address?: boolean;
+  phone?: boolean;
+  email?: boolean;
+}
+
+const ContactsLinks = ({ address, phone, email }: Props) => {
+
+
   return (
     <>
-      <p>България, София 1000, ул. &quot;Княз Борис I&quot; 85</p>
-      <p>телефон за контакти
-        <Link href='tel:+35929819687'>
-          : 02 981 9687
-        </Link>
-      </p>
-      <p>e-mail
-        <Link href='mailto:office@legalbg.net'>
-          : office@legalbg.net
-        </Link>
-      </p>
+      {address ?
+        <div>
+          <p className='p-2'>
+            България, София 1000, ул. &quot;Княз Борис I&quot; 85
+          </p>
+        </div>
+        : <div></div>
+      }
+      {phone ? <div>
+        <p className='p-2 '>Телефон за контакти:
+          <Link
+            href='tel:+35929819687'
+            className='underline px-1'>
+            02 981 9687
+          </Link>
+        </p>
+      </div>
+        : <div></div>
+      }
+      {email ?
+        <div>
+          <p className='p-2'>e-mail:
+            <Link
+              href='mailto:office@legalbg.net'
+              className='underline px-1'>
+              office@legalbg.net
+            </Link>
+          </p>
+        </div>
+        : <div></div>
+      }
     </>
   )
 }

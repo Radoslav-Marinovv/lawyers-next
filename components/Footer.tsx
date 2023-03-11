@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer p-10 bg-neutral-100 text-amber-200-content mt-auto border-t-2">
       <div>
-        <ContactsLinks />
+        <ContactsLinks address={true} phone={true} email={true} />
       </div>
       <div>
         <Image alt='Groshev & Partners' src={GPfooter} width={200} className="fill-current" />
