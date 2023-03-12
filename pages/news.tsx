@@ -15,20 +15,22 @@ const News: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className='md:max-w-4xl max-w-sm z-0 p-4 h-full'>
-        <div>{isLoading ? <Loading /> :
-          news?.map((post) => {
-            return (
-              <Fragment key={post.id}>
-                <div className="card card-bordered max-w-full bg-base-100 shadow-xl mb-4">
-                  <div className="card-body max-w-full">
-                    <h2 className="card-title">{post.title}</h2>
-                    <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
+      <div className='flex flex-col min-h-full w-full '>
+        <div className='md:max-w-4xl max-w-sm z-0 p-4 h-full self-center'>
+          <div>{isLoading ? <Loading /> :
+            news?.map((post) => {
+              return (
+                <Fragment key={post.id}>
+                  <div className="card card-bordered max-w-full bg-base-100 shadow-xl mb-4">
+                    <div className="card-body max-w-full">
+                      <h2 className="card-title">{post.title}</h2>
+                      <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
+                    </div>
                   </div>
-                </div>
-              </Fragment>
-            )
-          })}
+                </Fragment>
+              )
+            })}
+          </div>
         </div>
       </div>
     </>

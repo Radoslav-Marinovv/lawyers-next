@@ -11,36 +11,44 @@ const LegalServices: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className='max-w-4xl text-justify'>
-        <article id='1' className='p-4'>
+      <div className='flex flex-col h-full w-full text-justify'>
+        <article
+          id='1'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             ТЪРГОВСКО ПРАВО И НЕСЪСТОЯТЕЛНОСТ.
           </h2>
           <div className='text-base font-normal p-2'>
-            <p className='text-base indent-10 p-2'>
+            <p className=' indent-10 p-2'>
               Екипът ни консултира клиентите във всички аспекти на търговското право. Ние можем да осъществим процесуално представителство по търговски дела пред всички съдебни инстанции, какво и представителство пред държавни и общински органи. 	Можем да изготвим документи за учредяване на всякакъв вид търговски и граждански дружества, да ви съдействаме при вписването им в съответните регистри, прехвърляне и преструктуриране на търговски дружества, включително придобиване, сливане, отделяне и разделяне на търговски дружества, консултации и съдействие при продажба на търговско предприятие, изготвяне на търговски договори от всякакъв вид, водене на преговори и постигане на извънсъдебни споразумения, съдействие и представителство на клиенти при възникнали търговски спорове, съдействие при провеждане на общи събрания на търговски дружества и за решаване на спорове между съдружници, акционери и дружества.
             </p>
-            <p className='text-base indent-10 p-2'>
+            <p className=' indent-10 p-2'>
               Екипът ни може да Ви съдейства с изготвянето на всички необходими документи за провеждането на процедурата по ликвидация или откриване производство по несъстоятелност.
             </p>
-            <p className='text-base indent-10 p-2'>
+            <p className=' indent-10 p-2'>
               Дружеството има опит в изготвянето на правни оценки и анализи  както на небанкови финансови институции и банки.
             </p>
           </div>
         </article>
-        <div className="divider"></div>
-        <article id='2' className='p-4'>
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+        <article
+          id='2'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             ТЪРГОВСКИ СДЕЛКИ
           </h2>
-          <div className='text-base font-normal p-2'>
-            <p className='text-base indent-10 p-2'>
-              Екипът ни разполага с голям опит в консултирането по търговски сделки и изготвянето на търговски договори и менителнични ефекти. Предоставяме съдействие и консултации за при сключване на търговски сделки и договори от всякакво естество.
-            </p>
-          </div>
+          <p className='text-base indent-10  font-normal p-4'>
+            Екипът ни разполага с голям опит в консултирането по търговски сделки и изготвянето на търговски договори и менителнични ефекти. Предоставяме съдействие и консултации за при сключване на търговски сделки и договори от всякакво естество.
+          </p>
         </article>
-        <div className="divider"></div>
-        <article id='3' className='p-4'>
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+
+        <article
+          id='3'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             ВЕЩНО ПРАВО, НЕДВИЖИМИ ИМОТИ и СТРОИТЕЛСТВО
           </h2>
@@ -71,8 +79,12 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <div className="divider"></div>
-        <article id='4' className='p-4'>
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+
+        <article
+          id='4'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             СЕМЕЙНО И НАСЛЕДСТВЕНО ПРАВО
           </h2>
@@ -97,7 +109,11 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <article id='5' className='p-4'>
+
+        <article
+          id='5'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             БАНКОВО И ФИНАНСОВО ПРАВО
           </h2>
@@ -138,8 +154,12 @@ const LegalServices: NextPage = () => {
             </div>
           </div>
         </article>
-        <div className="divider"></div>
-        <article id='6' className='p-4'>
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+
+        <article
+          id='6'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             ЗАСТРАХОВАТЕЛНО ПРАВО
           </h2>
@@ -171,8 +191,12 @@ const LegalServices: NextPage = () => {
             </div>
           </div>
         </article>
-        <div className="divider"></div>
-        <article id='7' className='p-4'>
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+
+        <article
+          id='7'
+          className='p-4 max-w-4xl self-center'
+        >
           <h2 className='text-lg font-semibold text-center'>
             ТРУДОВО ПРАВО
           </h2>

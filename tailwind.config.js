@@ -9,7 +9,12 @@ module.exports = {
     //"./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern-image": "url('/pattern-image.jpg')",
+        "index-background-image": "url('/index-background-image.jpg')",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
