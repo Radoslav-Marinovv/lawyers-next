@@ -13,26 +13,27 @@ const ContactsLinks = ({ address, phone, email }: Props) => {
   return (
     <>
       {address ?
-        <div>
+        <div className='text-lg font-medium'>
           <p className='p-2'>
             България, София 1000, ул. &quot;Княз Борис I&quot; 85
           </p>
         </div>
         : <div></div>
       }
-      {phone ? <div>
-        <p className='p-2 '>Телефон за контакти:
-          <Link
-            href='tel:+35929819687'
-            className='underline px-1'>
-            02 981 9687
-          </Link>
-        </p>
-      </div>
+      {phone ?
+        <div className='text-lg font-medium'>
+          <p className='p-2 '>Телефон за контакти:
+            <Link
+              href='tel:+35929819687'
+              className='underline px-1'>
+              02 981 9687
+            </Link>
+          </p>
+        </div>
         : <div></div>
       }
       {email ?
-        <div>
+        <div className='text-lg font-medium'>
           <p className='p-2'>e-mail:
             <Link
               href='mailto:office@legalbg.net'

@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+html {
+ height: 100%;
+ width: 100%;
+ scroll-padding-top: 4rem;
+ scroll-padding-bottom: 4rem;
+ scroll-behavior: smooth;
+ overscroll-behavior: contain;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+iframe {
+ width: 100%;
+}
+
+h1 {
+font-size: 1.25rem/* 20px */;
+line-height: 1.75rem/* 28px */;
+font-weight: 700;
+}
+
+h2 {
+font-size: 1.25rem/* 20px */;
+line-height: 1.75rem/* 28px */;
+font-weight: 700;
+text-transform: uppercase;
+}

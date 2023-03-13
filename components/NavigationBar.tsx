@@ -52,51 +52,53 @@ const NavigationBar = () => {
             </div>
           </div>
         </div>
-        <Link href="/" className="btn btn-ghost normal-case text-xl lg:w-64 "><Image alt='Грошев и партньори' src={GPLogo} width={195} /></Link>
+        <Link href="/" className="btn btn-ghost normal-case text-xl lg:w-64 ">
+          <Image alt='Грошев и партньори' src={GPLogo} width={195} />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li
-            className='hover:bg-primary hover:transition-all hover:scale-105'>
+            className='transition-all hover:scale-105 hover:font-semibold'>
             <Link href="/">За нас</Link>
           </li>
           <li
             tabIndex={0}
-            className='hover:bg-primary hover:transition-all hover:scale-105'>
-            <Link href="/legal-services/#1">
+            className='transition-all'>
+            <Link className='hover:font-semibold hover:scale-105' href="/legal-services/#1">
               Сфери на дейност
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </Link>
             <ul className="p-2 bg-base-100">
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#1" scroll={false}>Търговско право и несъстоятелност</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#2" scroll={false}>Търговски сделки</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#3" scroll={false}>Вещно право, недвижими имоти и строителство</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#4" scroll={false}>Семейно и наследствено право</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold' >
                 <Link href="/legal-services/#5" scroll={false}>Банково и финансово право</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#6" scroll={false}>Застрахователно право</Link>
               </li>
-              <li className='hover:bg-primary hover:transition-all hover:scale-105'>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#7" scroll={false}>Трудово право</Link>
               </li>
             </ul>
           </li>
           <li
-            className='hover:bg-primary hover:transition-all hover:scale-105'>
+            className='transition-all hover:scale-105 hover:font-semibold'>
             <Link href="/news">Новини и публикации</Link>
           </li>
           <li
-            className='hover:bg-primary hover:transition-all hover:scale-105'>
+            className='transition-all hover:scale-105 hover:font-semibold'>
             <Link href="/contacts">Контакти</Link>
           </li>
         </ul>
