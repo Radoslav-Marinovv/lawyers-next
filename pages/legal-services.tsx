@@ -115,6 +115,8 @@ const LegalServices: NextPage = () => {
           </div>
         </article>
 
+        <div className='h-[650px] w-full bg-hero-pattern-image bg-no-repeat bg-fixed bg-cover'></div>
+
         <article
           id='5'
           className='p-4 max-w-4xl self-center'
