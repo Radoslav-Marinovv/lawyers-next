@@ -5,24 +5,27 @@ type Props = {
   address?: boolean;
   phone?: boolean;
   email?: boolean;
+  large?: boolean;
+  padding?: boolean;
 }
 
-const ContactsLinks = ({ address, phone, email }: Props) => {
+const ContactsLinks = ({ address, phone, email, large, padding }: Props) => {
 
-
+  const textStyle = large ? 'text-lg font-medium' : "text-base font-medium"
+  const paddingStyle = padding ? 'p-2' : ''
   return (
     <>
       {address ?
-        <div className='text-lg font-medium'>
-          <p className='p-2'>
+        <div className={textStyle}>
+          <p className={paddingStyle}>
             България, София 1000, ул. &quot;Княз Борис I&quot; 85
           </p>
         </div>
         : <div></div>
       }
       {phone ?
-        <div className='text-lg font-medium'>
-          <p className='p-2 '>Телефон за контакти:
+        <div className={textStyle}>
+          <p className={paddingStyle}>Телефон за контакти:
             <Link
               href='tel:+35929819687'
               className='underline px-1'>
@@ -33,8 +36,8 @@ const ContactsLinks = ({ address, phone, email }: Props) => {
         : <div></div>
       }
       {email ?
-        <div className='text-lg font-medium'>
-          <p className='p-2'>e-mail:
+        <div className={textStyle}>
+          <p className={paddingStyle}>e-mail:
             <Link
               href='mailto:office@legalbg.net'
               className='underline px-1'>

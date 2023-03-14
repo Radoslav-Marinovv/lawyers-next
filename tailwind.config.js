@@ -12,8 +12,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern-image": "url('/pattern-image.jpg')",
-        "index-background-image": "url('/index-background-image.jpg')",
         "index-background-image-courthouse": "url('/courthouse.jpg')",
+        "library-head-ladder": "url('/library-head-ladder.jpg')",
+        "library-round-ladder": "url('/library-round-ladder.jpg')",
+        "library-straight-ladder": "url('/library-straight-ladder.jpg')",
+        "themida-statue": "url('/themida-statue.jpg')",
       },
     },
   },

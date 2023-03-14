@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 html {
  height: 100%;
@@ -39,4 +39,8 @@ font-size: 1.25rem/* 20px */;
 line-height: 1.75rem/* 28px */;
 font-weight: 700;
 text-transform: uppercase;
+}
+
+.google-map * {
+  border-style: none;
 }

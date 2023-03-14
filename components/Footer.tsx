@@ -5,7 +5,7 @@ import ContactsLinks from './ContactsLinks'
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-neutral-100 text-amber-200-content mt-auto border-t-2">
+    <footer className="footer p-10 text-amber-200-content mt-auto border-t-2 border-[#c7c0be] bg-blend-lighten md:bg-blend-darken bg-gradient-to-r from-base-200  via-base-300 to-base-200">
       <div>
         <ContactsLinks address={true} phone={true} email={true} />
       </div>
