@@ -202,7 +202,6 @@ const LegalServices: NextPage = () => {
             </div>
           </div>
         </article>
-
         <article>
           <div className='w-full bg-image-library-straight-ladder background-paralax blur-none'></div>
           <div

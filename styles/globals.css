@@ -50,7 +50,7 @@ text-transform: uppercase;
 
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .bg-image-themida-statue {
