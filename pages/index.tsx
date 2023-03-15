@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className='flex flex-col h-full w-full' >
-        <div className='bg-index-background-image-courthouse  bg-cover w-full h-80'></div>
+        <div className='bg-image-courthouse bg-cover w-full h-80'></div>
         <div className='max-w-4xl self-center text-justify py-4'>
           <h1 className='text-center'>„Грошев и партньори”</h1>
           <p className='text-lg font-medium indent-10 p-2'>

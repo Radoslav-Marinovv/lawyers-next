@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 import GPLogo from '../public/gp-nav.png'
 
-// background color bg-base-100
 const NavigationBar = () => {
   return (
     <nav
@@ -48,6 +47,10 @@ const NavigationBar = () => {
             <hr />
             <div className="py-2">
               <Link href="/news">Новини и публикации</Link>
+            </div>
+            <hr />
+            <div className="py-2">
+              <Link href="/calculator">Калкулатор</Link>
             </div>
             <hr />
             <div className="py-2">
@@ -100,6 +103,10 @@ const NavigationBar = () => {
           <li
             className='transition-all hover:scale-105 hover:font-semibold'>
             <Link href="/news">Новини и публикации</Link>
+          </li>
+          <li
+            className='transition-all hover:scale-105 hover:font-semibold'>
+            <Link href="/calculator">Калкулатор</Link>
           </li>
           <li
             className='transition-all hover:scale-105 hover:font-semibold'>

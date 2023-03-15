@@ -11,7 +11,7 @@ const LegalServices: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className='flex flex-col h-full w-full text-justify'>
-        <div className='h-[350px] w-full bg-themida-statue bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-themida-statue background-paralax'></div>
         <article
           id='1'
           className='p-4 max-w-4xl self-center'
@@ -31,7 +31,7 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-themida-statue bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-themida-statue background-paralax'></div>
         <article
           id='2'
           className='p-4 max-w-4xl self-center'
@@ -45,7 +45,7 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-library-head-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-head-ladder background-paralax'></div>
 
         <article
           id='3'
@@ -81,7 +81,7 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-library-head-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-head-ladder background-paralax'></div>
 
         <article
           id='4'
@@ -112,7 +112,7 @@ const LegalServices: NextPage = () => {
           </div>
         </article>
 
-        <div className='h-[350px] w-full bg-library-round-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-round-ladder background-paralax'></div>
 
         <article
           id='5'
@@ -158,7 +158,7 @@ const LegalServices: NextPage = () => {
             </div>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-library-round-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-round-ladder background-paralax'></div>
 
         <article
           id='6'
@@ -195,7 +195,7 @@ const LegalServices: NextPage = () => {
             </div>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-library-straight-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-straight-ladder background-paralax'></div>
 
         <article
           id='7'
@@ -219,7 +219,7 @@ const LegalServices: NextPage = () => {
             </p>
           </div>
         </article>
-        <div className='h-[350px] w-full bg-library-straight-ladder bg-no-repeat bg-fixed bg-cover'></div>
+        <div className='h-[350px] w-full bg-image-library-straight-ladder background-paralax'></div>
       </div>
     </>
   )

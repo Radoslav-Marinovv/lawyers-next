@@ -41,6 +41,32 @@ font-weight: 700;
 text-transform: uppercase;
 }
 
-.google-map * {
+.google-map {
   border-style: none;
+}
+
+.background-paralax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-image-themida-statue {
+  background-image: url('/themida-statue.jpg');
+}
+
+.bg-image-library-head-ladder {
+  background-image: url('/library-head-ladder.jpg');
+}
+
+.bg-image-library-round-ladder {
+  background-image: url('/library-round-ladder.jpg');
+}
+
+.bg-image-library-straight-ladder {
+  background-image: url('/library-straight-ladder.jpg');
+}
+
+.bg-image-courthouse {
+  background-image: url('/courthouse.jpg');
 }
