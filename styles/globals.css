@@ -10,8 +10,8 @@ html {
  width: 100%;
  scroll-padding-top: 4rem;
  scroll-padding-bottom: 4rem;
- scroll-behavior: smooth;
- overscroll-behavior: contain;
+ /* scroll-behavior: smooth;
+ overscroll-behavior: contain; */
 }
 
 body {
@@ -46,8 +46,10 @@ text-transform: uppercase;
 }
 
 .background-paralax {
-  background-repeat: no-repeat;
+  min-height: 350px;
+
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
