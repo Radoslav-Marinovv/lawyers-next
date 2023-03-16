@@ -45,12 +45,20 @@ text-transform: uppercase;
   border-style: none;
 }
 
-.background-paralax {
+.background-parallax {
   min-height: 350px;
 
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+
+  
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1180px) {
+  .background-parallax {
+    background-attachment: scroll;
+  }
 }
 
 .bg-image-themida-statue {

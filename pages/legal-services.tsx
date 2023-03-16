@@ -12,7 +12,7 @@ const LegalServices: NextPage = () => {
       </Head>
       <div className='flex flex-col h-full w-full text-justify'>
         <article>
-          <div className='w-full bg-image-themida-statue background-paralax blur-none'></div>
+          <div className='w-full bg-image-themida-statue background-parallax blur-none'></div>
           <div
             id='1'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -34,7 +34,7 @@ const LegalServices: NextPage = () => {
         </article>
 
         <article>
-          <div className='w-full bg-image-themida-statue background-paralax blur-none'></div>
+          <div className='w-full bg-image-themida-statue background-parallax blur-none'></div>
           <div
             id='2'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -50,7 +50,7 @@ const LegalServices: NextPage = () => {
         </article>
 
         <article>
-          <div className='w-full bg-image-library-head-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-head-ladder background-parallax blur-none'></div>
           <div
             id='3'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -87,7 +87,7 @@ const LegalServices: NextPage = () => {
         </article>
 
         <article>
-          <div className='w-full bg-image-library-head-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-head-ladder background-parallax blur-none'></div>
           <div
             id='4'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -118,7 +118,7 @@ const LegalServices: NextPage = () => {
         </article>
 
         <article>
-          <div className='w-full bg-image-library-round-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-round-ladder background-parallax blur-none'></div>
           <div
             id='5'
             className='p-4 max-w-4xl self-center m-auto'
@@ -166,7 +166,7 @@ const LegalServices: NextPage = () => {
         </article>
 
         <article>
-          <div className='w-full bg-image-library-round-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-round-ladder background-parallax blur-none'></div>
           <div
             id='6'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -203,7 +203,7 @@ const LegalServices: NextPage = () => {
           </div>
         </article>
         <article>
-          <div className='w-full bg-image-library-straight-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-straight-ladder background-parallax blur-none'></div>
           <div
             id='7'
             className='p-4 max-w-4xl self-center m-auto'>
@@ -225,7 +225,7 @@ const LegalServices: NextPage = () => {
               </p>
             </div>
           </div>
-          <div className='w-full bg-image-library-straight-ladder background-paralax blur-none'></div>
+          <div className='w-full bg-image-library-straight-ladder background-parallax blur-none'></div>
         </article>
       </div>
     </>
