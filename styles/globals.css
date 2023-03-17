@@ -10,8 +10,8 @@ html {
  width: 100%;
  scroll-padding-top: 4rem;
  scroll-padding-bottom: 4rem;
- /* scroll-behavior: smooth;
- overscroll-behavior: contain; */
+ scroll-behavior: smooth;
+ overscroll-behavior: contain;
 }
 
 body {
@@ -54,12 +54,23 @@ text-transform: uppercase;
 
   
 }
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+
+/* Turn off parallax scrolling for all tablets and phones. */
 @media only screen and (max-device-width: 1180px) {
   .background-parallax {
     background-attachment: scroll;
   }
 }
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 
 .bg-image-themida-statue {
   background-image: url('/themida-statue.jpg');
