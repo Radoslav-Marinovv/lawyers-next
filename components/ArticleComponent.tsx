@@ -16,21 +16,21 @@ const ArticleComponent = ({ articleId, heading, list, paragraph, topPicture, bot
           id={articleId}
           className='p-4 max-w-4xl self-center m-auto'
         >
-          {heading?.map((h: string) => (
-            <h2 className='text-center'>
+          {heading?.map((h: string, index: number) => (
+            <h2 key={index} className='text-center'>
               {h}
             </h2>
           ))}
           <div className='text-lg font-medium p-2'>
-            {paragraph?.map((p: string) => (
-              <p className='indent-10 p-2'>
+            {paragraph?.map((p: string, index: number) => (
+              <p key={index} className='indent-10 p-2'>
                 {p}
               </p>
             ))}
-            {list?.map((li: string) => (
+            {list?.map((li: string, index: number) => (
               <div className='font-bold px-8 py-2'>
                 <ul className='leading-normal list-disc'>
-                  <li>
+                  <li key={index}>
                     {li}
                   </li>
                 </ul>
