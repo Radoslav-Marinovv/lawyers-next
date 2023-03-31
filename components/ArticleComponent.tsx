@@ -28,9 +28,9 @@ const ArticleComponent = ({ articleId, heading, list, paragraph, topPicture, bot
               </p>
             ))}
             {list?.map((li: string, index: number) => (
-              <div className='font-bold px-8 py-2'>
+              <div key={index} className='font-bold px-8 py-2'>
                 <ul className='leading-normal list-disc'>
-                  <li key={index}>
+                  <li>
                     {li}
                   </li>
                 </ul>
