@@ -1,17 +1,54 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import React, { useState } from 'react'
+import { FormEvent, useMemo, useState } from 'react';
+
+type FormValues = {
+  interest: number;
+  agreement1: boolean;
+  agreement2: boolean;
+  agreement3: boolean;
+  compensation: string;
+  commandProduction: boolean;
+  claimProduction: boolean;
+  firstInstance: boolean;
+  secondInstance: boolean;
+  thirdInstance: boolean;
+  provisionalProceedings: boolean;
+};
 
 const Calculator: NextPage = () => {
-  const [instanceValue, setInstanceValue] = useState<number>(1)
-  const onValueChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.currentTarget.value === "0")
-      setInstanceValue(0)
-    if (e.currentTarget.value === "1")
-      setInstanceValue(1)
-    else (e.currentTarget.value === "2")
-    setInstanceValue(2)
-  }
+
+  const initialValues: FormValues = {
+    interest: 0,
+    agreement1: false,
+    agreement2: false,
+    agreement3: false,
+    compensation: "",
+    commandProduction: false,
+    claimProduction: false,
+    firstInstance: false,
+    secondInstance: false,
+    thirdInstance: false,
+    provisionalProceedings: false,
+  };
+
+  const [values, setValues] = useState<FormValues>(initialValues);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log("Form submitted with values: ", values);
+  };
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const name = event.target.name;
+    const value =
+      event.target.type === "checkbox"
+        ? event.target.checked
+        : event.target.value;
+    setValues({ ...values, [name]: value });
+  };
+
+
   return (
     <>
       <Head>
@@ -21,12 +58,20 @@ const Calculator: NextPage = () => {
       </Head>
       <div className='flex p-4'>
         <div className='max-w-2xl justify-center items-center m-auto'>
-          <form action="" className='card-body shadow-2xl rounded form-control'>
+          <form
+            onSubmit={handleSubmit}
+            className='card-body shadow-2xl rounded form-control'>
             <div className='flex flex-col justify-between items-center'>
               <label className='text-center text-lg text-indigo-500 font-bold'>
                 Интерес
               </label>
-              <input type="number" placeholder="BGN" className="input input-bordered input-info w-full text-center max-w-xs  " />
+              <input
+                type="number"
+                placeholder="BGN"
+                name="interest"
+                value={values.interest}
+                onChange={handleChange}
+                className="input input-bordered input-info w-full text-center max-w-xs  " />
             </div>
             <div className="p-2">
               <p className='text-center text-lg text-indigo-500 font-bold'>Извънпроцесуална дейност</p>
@@ -35,21 +80,39 @@ const Calculator: NextPage = () => {
                 <label className='label-text text-lg font-medium'>
                   Съставяне на писмен договор по чл. 6, ал. 8, пр. 1 от Наредбата
                 </label>
-                <input aria-label='are' type="checkbox" className="checkbox checkbox-accent" />
+                <input
+                  aria-label='are'
+                  type="checkbox"
+                  name="agreement1"
+                  checked={values.agreement1}
+                  onChange={handleChange}
+                  className="checkbox checkbox-accent" />
               </div>
               <br />
               <div className='flex justify-between items-center'>
                 <label className='label-text text-lg font-medium'>
                   Съставяне на нотариални актове за собственост, продажба, замяна, дарение, ипотека, суперфиция и сервитути по чл. 6, ал. 8, пр. 2 и сл. от Наредбата
                 </label>
-                <input aria-label='are' type="checkbox" className="checkbox checkbox-accent" />
+                <input
+                  aria-label='are'
+                  type="checkbox"
+                  name="agreement2"
+                  checked={values.agreement2}
+                  onChange={handleChange}
+                  className="checkbox checkbox-accent" />
               </div>
               <br />
               <div className='flex justify-between items-center'>
                 <label className='label-text text-lg font-medium'>
                   Съставяне на извънсъдебна спогодба по чл. 6, ал. 8 от Наредбата
                 </label>
-                <input aria-label='are' type="checkbox" className="checkbox checkbox-accent" />
+                <input
+                  aria-label='are'
+                  type="checkbox"
+                  name="agreement3"
+                  checked={values.agreement3}
+                  onChange={handleChange}
+                  className="checkbox checkbox-accent" />
               </div>
               <br />
             </div>
@@ -60,14 +123,24 @@ const Calculator: NextPage = () => {
                 <label className="label-text text-lg font-medium w-full">
                   за дела, заведени преди 04.11.2022
                 </label>
-                <input aria-label='are' type="radio" name="radio-10" required className="radio checked:radio-accent" />
+                <input
+                  aria-label='are'
+                  type="radio"
+                  name="commandProduction"
+                  required
+                  className="radio checked:radio-accent" />
               </div>
               <br />
               <div className='flex justify-between items-center'>
                 <label className="label-text text-lg font-medium w-full">
                   за дела, заведени след 04.11.2022
                 </label>
-                <input aria-label='are' type="radio" name="radio-10" required className="radio checked:radio-accent" />
+                <input
+                  aria-label='are'
+                  type="radio"
+                  name="commandProduction"
+                  required
+                  className="radio checked:radio-accent" />
                 <span className='divider'></span>
               </div>
               <div className='divider'></div>
@@ -177,6 +250,8 @@ const Calculator: NextPage = () => {
                 <span className='divider'></span>
               </div>
             </div>
+            <button type="submit" className='card items-center border-2 border-primary p-3'>Send</button>
+            <div className="card border-2 border-primary p-3">{ }</div>
           </form>
         </div>
       </div>

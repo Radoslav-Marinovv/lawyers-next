@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import GPLogo from '../public/gp-nav.png'
 
 const NavigationBar = () => {
+  const [clicked, setClicked] = useState(true);
+  const handleClick = () => {
+    setClicked(!clicked)
+    console.log(clicked)
+  }
   return (
     <nav
       className="navbar text-amber-200-content sticky top-0 border-b-2 border-[#c7c0be] z-10  bg-gradient-to-r from-base-200  via-base-300 to-base-200">
@@ -18,31 +23,37 @@ const NavigationBar = () => {
               <Link href="/">За нас</Link>
             </div>
             <hr />
-            <div className="py-2">
-              <Link href="/legal-services/#1" scroll={false}>Сфери на дейност</Link>
-              <ul className="py-1 px-2">
-                <li>
-                  <Link href="/legal-services/#1" scroll={false}>Търговско право и несъстоятелност</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#2" scroll={false}>Търговски сделки</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#3" scroll={false}>Вещно право, недвижими имоти и строителство</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#4" scroll={false}>Семейно и наследствено право</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#5" scroll={false}>Банково и финансово право</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#6" scroll={false}>Застрахователно право</Link>
-                </li>
-                <li>
-                  <Link href="/legal-services/#7" scroll={false}>Трудово право</Link>
-                </li>
-              </ul>
+            <div className="p-2 mx-auto">
+              <details open={false}>
+                <summary className='p=2' >
+                  Сфери на дейност
+                </summary>
+                <div>
+                  <ul className="py-1 px-2">
+                    <li>
+                      <Link href="/legal-services/#1" scroll={false}>Търговско право и несъстоятелност</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#2" scroll={false}>Търговски сделки</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#3" scroll={false}>Вещно право, недвижими имоти и строителство</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#4" scroll={false}>Семейно и наследствено право</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#5" scroll={false}>Банково и финансово право</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#6" scroll={false}>Застрахователно право</Link>
+                    </li>
+                    <li>
+                      <Link href="/legal-services/#7" scroll={false}>Трудово право</Link>
+                    </li>
+                  </ul>
+                </div>
+              </details>
             </div>
             <hr />
             <div className="py-2">
