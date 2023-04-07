@@ -1,14 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import GPLogo from '../public/gp-nav.png'
 
 const NavigationBar = () => {
-  const [clicked, setClicked] = useState(true);
-  const handleClick = () => {
-    setClicked(!clicked)
-    console.log(clicked)
-  }
+
   return (
     <nav
       className="navbar text-amber-200-content sticky top-0 border-b-2 border-[#c7c0be] z-10  bg-gradient-to-r from-base-200  via-base-300 to-base-200">
@@ -61,10 +57,6 @@ const NavigationBar = () => {
             </div>
             <hr />
             <div className="py-2">
-              <Link href="/calculator">Калкулатор</Link>
-            </div>
-            <hr />
-            <div className="py-2">
               <Link href="/contacts">Контакти</Link>
             </div>
           </div>
@@ -114,10 +106,6 @@ const NavigationBar = () => {
           <li
             className='transition-all hover:scale-105 hover:font-semibold'>
             <Link href="/news">Новини и публикации</Link>
-          </li>
-          <li
-            className='transition-all hover:scale-105 hover:font-semibold'>
-            <Link href="/calculator">Калкулатор</Link>
           </li>
           <li
             className='transition-all hover:scale-105 hover:font-semibold'>
