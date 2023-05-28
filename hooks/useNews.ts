@@ -10,7 +10,7 @@ type Post = {
 
 export const useNews = () => {
   const URL =
-    "https://www.googleapis.com/blogger/v3/blogs/947014603563891833/posts?key=";
+    "https://www.googleapis.com/blogger/v3/blogs/7774721030175999739/posts?key=";
   const [news, setNews] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const refresh = async () => {
