@@ -47,6 +47,9 @@ const NavigationBar = () => {
                     <li>
                       <Link href="/legal-services/#7" scroll={false}>Трудово право</Link>
                     </li>
+                    <li>
+                      <Link href="/legal-services/#8" scroll={false}>Наказателно право</Link>
+                    </li>
                   </ul>
                 </div>
               </details>
@@ -100,6 +103,9 @@ const NavigationBar = () => {
               </li>
               <li className='transition-all hover:scale-105 hover:font-semibold'>
                 <Link href="/legal-services/#7" scroll={false}>Трудово право</Link>
+              </li>
+              <li className='transition-all hover:scale-105 hover:font-semibold'>
+                <Link href="/legal-services/#8" scroll={false}>Наказателно право</Link>
               </li>
             </ul>
           </li>
